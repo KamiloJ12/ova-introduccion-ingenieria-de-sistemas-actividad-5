@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="actividad5" version="0.1.3">
+ <settings>
+  <title>actividad5</title>
+  <revision description="created" date="12/15/22" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="actividad5" />
+ </sequence>
+ <activities>
+  <activity class="@puzzles.DoublePuzzle" name="actividad5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style />
+     <p>Arma la imagen con las piezas</p>
+    </cell>
+    <cell type="final">
+     <style />
+     <p>Felicitaciones, actividad superada con exito</p>
+    </cell>
+   </messages>
+   <settings margin="25" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <gradient source="0xF9222F" dest="0xFFFFFF" angle="143" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xC0C0C0" border="true" />
+   </settings>
+   <cells rows="4" cols="3" border="true" image="rompecabezas.jpg">
+    <style />
+    <shaper class="@JigSaw" cols="3" rows="4" />
+   </cells>
+   <scramble times="31" />
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="rompecabezas.jpg" file="rompecabezas.jpg" />
+ </mediaBag>
+</JClicProject>
+
